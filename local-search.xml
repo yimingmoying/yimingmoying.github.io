@@ -61,6 +61,12 @@
     <content type="html"><![CDATA[<h2 id="AI-agent"><a href="#AI-agent" class="headerlink" title="AI agent"></a>AI agent</h2><p>我用的是Codex，然后挂的是Deepseek v4 flash and pro，都这样了那token的获取肯定相当稳定啊</p><h2 id="http协议"><a href="#http协议" class="headerlink" title="http协议"></a>http协议</h2><p>作为新学者，我目前的理解就是，http协议类似于我们的语言，客户端和服务端就通过http进行沟通，客户端发送请求，然后服务端判断是不是爬虫，再把信息发到浏览器上，最终经过渲染，就看到了网页。<br>Get和post的区别我认为就是，get目的是为了从服务器获取数据，而post是为了修改服务器的数据</p><h2 id="Burp-Suite"><a href="#Burp-Suite" class="headerlink" title="Burp Suite"></a>Burp Suite</h2><p>配置了社区版的bp(掏不起499美元，正在寻找破解版)，并配合Proxy SwitchyOmega3插件进行抓包<br>利用Proxy抓包，修改信息，比如在靶场发送邮件，利用Proxy进行抓取，修改，放行操作，把收件人修改为别人<br>了解怎么用Repeater，但是还不知道怎么自动的用Repeater发送请求<br>了解Instruder爆破密码，验证码的操作</p><h2 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h2><p>User—Agent:代表的就是发起请求的是什么浏览器<br>Cookie:里面记录了登录信息，因为说http没有脑子，根本记不得我上次访问的记录和信息，好像叫无对话状态，我觉得cookie应该是作为代理，告诉http我是谁<br>Referer:告诉服务器我从哪里来的</p><h2 id="前端三件套"><a href="#前端三件套" class="headerlink" title="前端三件套"></a>前端三件套</h2><p>这个是我最熟悉的<br>html，CSS和JavaScript这三个东西打个比方，html类似于一个毛坯房，基本骨架就确定了，CSS那就是装修工了，用CSS就能给这个毛坯房进行精装修，当然CSS有些功能html也可以做到，但是CSS的语法更方便一点，而且.css文件就像是这个装修工脑子里面的装修方案，如果说我要对很多的html文件都进行类似的装修，那一个一个改是一种极其不健康的行为，这个时候我们只要提前写一个.css文件，在html文件里面引用这个装修方案，就很方便了，而JavaScript就是管家了，我想要什么，管家就去房子里面给我拿什么，就这样实现交互功能。</p><h2 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h2><p>我用deepseek v4 flash写了一个登录页面，虽然看得有点吃力，但是看了两天我已经跟看懂了，但是其中有些语法和简便写法我不知道，所以目前来说如果让我自己默写肯定是写不出来的</p>]]></content>
     
     
+    <categories>
+      
+      <category>-web周报</category>
+      
+    </categories>
+    
     
     <tags>
       
