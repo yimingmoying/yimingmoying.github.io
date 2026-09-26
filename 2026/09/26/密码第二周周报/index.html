@@ -1,0 +1,840 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="yimingmoying">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="数据类型文本类型str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样 数值类型1.int：只取数字的整数部分2.float：将数字改写为浮点数3.complex：将数字改写为复数 序列类型list：列表 目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢 字符串比较少的字符串就用一对单引号或者双引号来表示，但是多行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="密码第二周周报">
+<meta property="og:url" content="http://yimingmoying.github.io/2026/09/26/%E5%AF%86%E7%A0%81%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%91%A8%E6%8A%A5/index.html">
+<meta property="og:site_name" content="Me">
+<meta property="og:description" content="数据类型文本类型str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样 数值类型1.int：只取数字的整数部分2.float：将数字改写为浮点数3.complex：将数字改写为复数 序列类型list：列表 目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢 字符串比较少的字符串就用一对单引号或者双引号来表示，但是多行">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-09-26T09:32:24.000Z">
+<meta property="article:modified_time" content="2026-09-26T12:18:00.551Z">
+<meta property="article:author" content="yimingmoying">
+<meta property="article:tag" content="-学习笔记">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>密码第二周周报 - Me</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yimingmoying.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tags</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="密码第二周周报"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-09-26 17:32" pubdate>
+          September 26, 2026 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.4k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          29 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">密码第二周周报</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="文本类型"><a href="#文本类型" class="headerlink" title="文本类型"></a>文本类型</h3><p>str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样</p>
+<h3 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h3><p>1.int：只取数字的整数部分<br>2.float：将数字改写为浮点数<br>3.complex：将数字改写为复数</p>
+<h3 id="序列类型"><a href="#序列类型" class="headerlink" title="序列类型"></a>序列类型</h3><p>list：列表</p>
+<p>目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>比较少的字符串就用一对单引号或者双引号来表示，但是多行字符串可以用三对双引号或者单引号来表示<br>字符串也是一个数组，字符串中的空格要占一个位置，例如：<br>b &#x3D; “Hello, World!”<br>print(b[2:5])<br>这个输出结果就是 llo<br>如果改写为：<br>b &#x3D; “Hello, World!”<br>print(b[-3:-1])<br>此时输出结果就是 rld</p>
+<h3 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h3><p>使用方法：变量.方法()<br>len()：可以查看字符串的长度，同时它也可以查看列表，元组，字典长度<br>strip()：可以删除开头和结尾的空白字符，这个东西我能想到的除了在后端记录密码、用户名避免因为空格而导致登录报错之外，我不知道它还有什么用处<br>lower():将字符全部返回为小写<br>upper():与lower()相反<br>replace(“要被替换的字符串”，“替换为的字符串”):将字符串中的一小段替换掉<br>split(“寻找作为分割点的符号”):找到分隔符是将一整个字符串分割为许多子字符串</p>
+<h3 id="字符串组合"><a href="#字符串组合" class="headerlink" title="字符串组合"></a>字符串组合</h3><p>举个例子：<br>age &#x3D; “18”<br>txt &#x3D; “My name is zzy, I am “ + age<br>print(txt)<br>此时输出的是 My name is zzy, I am 18<br>但是，注意到，如果这句话 age &#x3D; “18” 没有引号怎么办？此时再打印就会报错，因为 + 两边的数据类型需要相同，左边是str烈性，右边是int类型，文本类型不一样就不能相加，但是如果两个数字，一个是str类型，另一个是int类型，虽然文本类型不一样，但是依然不会报错<br>显然，按照上述的方法，我们需要时刻注意 + 两边的文本类型是不是一样的，这会消耗我们的精力，这很不健康，那么主播主播，有没有可以无脑插入字符串的方法？有的兄弟，有的有的<br>format()方法就此诞生，我们只要将上面的例子进行一个小小的更改：<br>age &#x3D; “18”<br>txt &#x3D; “My name is zzy, I am {}”<br>print(txt.format(age))<br>这里{}起到一个占位符的作用，format 就自动的将 age 这个变量插入到这个占位符里面，但是如果我有很多要插入的东西怎么办？举个例子：<br>quantity &#x3D; 3<br>itemno &#x3D; 567<br>price &#x3D;114514<br>myorder &#x3D; “I want {} pieces of item {} for {} dollars.”<br>print(myorder.format(quantity, itemno, price))<br>这样，format 就会按照顺序将变量添加到占位符里面</p>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>加(+) 减(-) 乘(*) 除(&#x2F;) 取模(%) 幂(**) 取整除(&#x2F;&#x2F;)</p>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>and	如果两个语句都为真，则返回 True<br>or	如果其中一个语句为真，则返回 True<br>not	反转结果，如果结果为 true，则返回 False</p>
+<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>in	如果对象中存在具有指定值的序列，则返回 True<br>not in	如果对象中不存在具有指定值的序列，则返回 True</p>
+<h3 id="二进制运算符"><a href="#二进制运算符" class="headerlink" title="二进制运算符"></a>二进制运算符</h3><p>&amp;	AND 与	如果两个位均为1，则将每个位设为 1<br>|	OR 或	如果两位中的一位为1，则将每个位设为 1<br>^	XOR 异或  如果两个位中只有一位为1，则将每个位设为 1<br>~	NOT 非	反转所有位</p>
+<h2 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h2><h3 id="if"><a href="#if" class="headerlink" title="if"></a>if</h3><p>温馨提醒：缩进要对</p>
+<h3 id="elif"><a href="#elif" class="headerlink" title="elif"></a>elif</h3><p>和 if 没什么区别，但是它会使整个程序简洁，如果一个程序写的全是 if ，那么电脑就会选择将所有的 if 全部跑一边，即使它已经找到满足条件的程序了，但是 elif 不一样，它一旦找到满足条件的程序，就会停止接下来的判断，因此会使整个程序效率更高</p>
+<h3 id="else"><a href="#else" class="headerlink" title="else"></a>else</h3><p>最后一个条件判断</p>
+<h2 id="While循环"><a href="#While循环" class="headerlink" title="While循环"></a>While循环</h2><h3 id="While语法"><a href="#While语法" class="headerlink" title="While语法"></a>While语法</h3><p>while 要判断条件：<br>    判断为成立后所要执行的语句</p>
+<h3 id="break语句"><a href="#break语句" class="headerlink" title="break语句"></a>break语句</h3><p>break语句写在while语句里边，只要break被执行，那么整个while语句就会被停止</p>
+<h3 id="continue语句"><a href="#continue语句" class="headerlink" title="continue语句"></a>continue语句</h3><p>continue语句和break相反，一个直接停止，一个是重新执行while语句</p>
+<h2 id="For循环"><a href="#For循环" class="headerlink" title="For循环"></a>For循环</h2><h3 id="For语法"><a href="#For语法" class="headerlink" title="For语法"></a>For语法</h3><p>for 变量 in 要循环执行的内容：<br>    开始循环后要执行的语句</p>
+<h3 id="break和continue语句"><a href="#break和continue语句" class="headerlink" title="break和continue语句"></a>break和continue语句</h3><p>和while一样</p>
+<h3 id="range-函数"><a href="#range-函数" class="headerlink" title="range()函数"></a>range()函数</h3><p>举个例子<br>for i in range(1,11，2):<br>    print(i)<br>输出结果为1，3，5，7，9<br>注意：输出结果没有11</p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="创建并调用函数"><a href="#创建并调用函数" class="headerlink" title="创建并调用函数"></a>创建并调用函数</h3><p>用 def 定义函数，举个例子：<br>def function():<br>    print(“Hello，Wrold”)<br>function()<br>此时输出结果为 Hello，Wrold </p>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p>def function(fname):<br>    print(fname + “is a human”)<br>function(“zzy”)<br>此时，输出结果为 zzy is a human</p>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>现在有这么一个分段函数：<br>若 x&gt;0 则 f(x)&#x3D;x+f(x-1)<br>若 x&lt;&#x3D;0 则 f(x)&#x3D;0<br>我现在想知道 x 从 0到6 所有的值，该怎么写呢？<br>def function(x):<br>    if x&gt;0:<br>        result &#x3D; x + function(x-1)<br>        print(result)<br>    else:<br>        result &#x3D; 0<br>    return result<br>function(6)<br>这样输出结果就是1，3，6，10，15，21<br>但是输出结果为什么不是21，15，10，6，3，1呢？<br>因为电脑在处理这个函数的时候发现 function(6) 算不出来，因为它需要 function(5)，以此类推直到 function(0) 它算出来是0，但是0不打印，此时它开始打印最新的结果，就是 function(1)&#x3D;1 ，因此是这个顺序</p>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p>这个对于我这个新手来说感觉有点难整</p>
+<h3 id="创建并使用类"><a href="#创建并使用类" class="headerlink" title="创建并使用类"></a>创建并使用类</h3><p>函数创建用 def ，这里用 class<br>比如我现在要创建 Person 这个类：<br>class Person:<br>    内容<br>要知道，类里面自带的有一个 <strong>init</strong>() 函数，这个函数无论在类里面写不写，它都会默认执行，它具有一定的性质，举个例子：<br>class Person:<br>    def <strong>init</strong>(self, name, age):<br>        self.name &#x3D; name<br>        self.age &#x3D; age<br>    def function(self):<br>        print(“My name is”, self.name ,”I am”, sale.age ,)<br>p1 &#x3D; Person(“zzy”, 18)<br>p2 &#x3D; Person(“xxx”, 18)<br>p1.function()<br>p2.function()<br>这里可能会产生三个问题：</p>
+<p>1.self是什么？为什么要写 self ？<br> self 是你自定义的对象的名字，也可以叫 this ，也可以叫 balabala 。这里如果不写self，后面的 self.name 电脑就不知道是什么，就会报错</p>
+<p>2.self.name 和 self.age 中，点后面的 name ，age 是什么？<br>那是自定义的类型，和文本类型(str)和整数类型(int)是一个东西，但是这里的 name 和 age 是我们自定义的</p>
+<p>3.为什么不写成 function(p1) 呢？<br>当然不可以写成这个样子！<br>(1)这个函数是写在类里面的，不能在外面单独使用<br>(2)这一条是显示这两个写法的本质区别，而不是不能这么写的原因，p1.function() 实际上是让 p1 自己去执行 function 这个函数，而 function(p1) 是你自己主动将 p1 传进 function() 这个工具中进行加工<br>但是我非要在外面单独用呢？<br>那调用时只用在 function() 前面加上 Person. 即 Person.function(p1) 就能正常使用了</p>
+<p>还有要补充的对于我来说便于理解的东西，就是这个点，我们翻译为自然语言可以是“的”和“进行……操作”两个意思，还拿刚才这个示例来说：<br>self.name 可以理解为 self (就是指后面创建的对象，比如 p1 )的 name<br>p1.function() 可以理解为让 p1 自己运行 function() 这个函数</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我已力竭，但还会再继续学习的，前面抽象代数的知识有点遗忘，下周再复习吧！<br>来把雀魂！</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%91%A8%E6%8A%A5/" class="category-chain-item">-密码学周报</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="print-no-link">#-学习笔记</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>密码第二周周报</div>
+      <div>http://yimingmoying.github.io/2026/09/26/密码第二周周报/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>yimingmoying</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>September 26, 2026</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/09/22/web%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%91%A8%E6%8A%A5/" title="web第二周周报">
+                        <span class="hidden-mobile">web第二周周报</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    function isExpandAllEnabled() {
+      return CONFIG.toc && CONFIG.toc.expand_all === true;
+    }
+    function expandAllToc() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .tocbot-is-collapsed').removeClass('tocbot-is-collapsed');
+    }
+    function updateTocToggle($li, $childList) {
+      var $toggle = $li.children('.toc-toggle');
+      if ($toggle.length === 0) { return; }
+      var collapsed = $childList.hasClass('tocbot-is-collapsed');
+      $toggle
+        .toggleClass('toc-toggle-collapsed', collapsed)
+        .toggleClass('toc-toggle-expanded', !collapsed);
+    }
+    function bindTocToggle() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .toc-list-item').each(function() {
+        var $li = jQuery(this);
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) {
+          if ($li.children('.toc-toggle').length === 0) {
+            $li.prepend('<span class="toc-toggle toc-toggle-placeholder" aria-hidden="true">›</span>');
+          }
+          return;
+        }
+
+        if ($li.children('.toc-toggle').length === 0) {
+          $li.prepend('<span class="toc-toggle toc-toggle-expanded" aria-hidden="true">›</span>');
+        }
+        updateTocToggle($li, $childList);
+      });
+      jQuery('#toc-body').off('click.tocToggle').on('click.tocToggle', '.toc-toggle', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $li = jQuery(this).parent('.toc-list-item');
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) { return; }
+        $childList.toggleClass('tocbot-is-collapsed');
+        updateTocToggle($li, $childList);
+      });
+      if (!window.__tocToggleObserver) {
+        window.__tocToggleObserver = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type !== 'attributes' || mutation.attributeName !== 'class') { return; }
+            var $list = jQuery(mutation.target);
+            var $li = $list.parent('.toc-list-item');
+            if ($li.length === 0) { return; }
+            updateTocToggle($li, $list);
+          });
+        });
+        jQuery('#toc-body ol').each(function() {
+          window.__tocToggleObserver.observe(this, { attributes: true });
+        });
+      }
+    }
+    var tocConfig = Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc);
+    if (isExpandAllEnabled()) {
+      tocConfig.collapseDepth = 6;
+    }
+    window.tocbot.init(tocConfig);
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+    expandAllToc();
+    bindTocToggle();
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+        expandAllToc();
+        bindTocToggle();
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
