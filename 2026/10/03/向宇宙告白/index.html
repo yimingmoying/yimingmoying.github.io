@@ -19,12 +19,12 @@
   <meta name="author" content="yimingmoying">
   <meta name="keywords" content="">
   
-    <meta name="description" content="取一个呼号到这里我比较懵逼，第一想法难道是SQL注入？但是经过尝试，很明显不是考察SQL注入的我输入网址，生成信号，偶然发现生成的信号可以跳转到刚才输入的网址，随后我探索了“已公开的信号”，“信号薄”，没什么有用的发现，于是我点了“退出”就在这时，嗯？怎么多了个东西“回到频道”下面的小字我注意到了“忘了口令？她曾经把一条重置链接压成信号，留给自己用。 你手上要是正好有那条信号，直接打开它就行。”也">
+    <meta name="description" content="取一个呼号  到这里我比较懵逼，第一想法难道是SQL注入？ 但是经过尝试，很明显不是考察SQL注入的  我输入网址，生成信号，偶然发现生成的信号可以跳转到刚才输入的网址，随后我探索了“已公开的信号”，“信号薄”，没什么有用的发现，于是我点了“退出” 就在这时，嗯？怎么多了个东西“回到频道”  下面的小字我注意到了 “忘了口令？她曾经把一条重置链接压成信号，留给自己用。 你手上要是正好有那条信号，直">
 <meta property="og:type" content="article">
 <meta property="og:title" content="向宇宙告白">
 <meta property="og:url" content="http://yimingmoying.github.io/2026/10/03/%E5%90%91%E5%AE%87%E5%AE%99%E5%91%8A%E7%99%BD/index.html">
 <meta property="og:site_name" content="Me">
-<meta property="og:description" content="取一个呼号到这里我比较懵逼，第一想法难道是SQL注入？但是经过尝试，很明显不是考察SQL注入的我输入网址，生成信号，偶然发现生成的信号可以跳转到刚才输入的网址，随后我探索了“已公开的信号”，“信号薄”，没什么有用的发现，于是我点了“退出”就在这时，嗯？怎么多了个东西“回到频道”下面的小字我注意到了“忘了口令？她曾经把一条重置链接压成信号，留给自己用。 你手上要是正好有那条信号，直接打开它就行。”也">
+<meta property="og:description" content="取一个呼号  到这里我比较懵逼，第一想法难道是SQL注入？ 但是经过尝试，很明显不是考察SQL注入的  我输入网址，生成信号，偶然发现生成的信号可以跳转到刚才输入的网址，随后我探索了“已公开的信号”，“信号薄”，没什么有用的发现，于是我点了“退出” 就在这时，嗯？怎么多了个东西“回到频道”  下面的小字我注意到了 “忘了口令？她曾经把一条重置链接压成信号，留给自己用。 你手上要是正好有那条信号，直">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yimingmoying.github.io/images/%E5%8F%96%E4%B8%80%E4%B8%AA%E5%91%BC%E5%8F%B7.jpg">
 <meta property="og:image" content="http://yimingmoying.github.io/images/%E4%BF%A1%E5%8F%B7%E7%94%9F%E6%88%90.jpg">
@@ -50,6 +50,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -331,7 +333,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          835 words
+          820 words
         
       </span>
     
@@ -386,8 +388,28 @@
             
               <div class="markdown-body">
                 
-                <h2 id="取一个呼号"><a href="#取一个呼号" class="headerlink" title="取一个呼号"></a>取一个呼号</h2><p><img src="/images/%E5%8F%96%E4%B8%80%E4%B8%AA%E5%91%BC%E5%8F%B7.jpg" srcset="/img/loading.gif" lazyload alt="取一个呼号"><br>到这里我比较懵逼，第一想法难道是SQL注入？<br>但是经过尝试，很明显不是考察SQL注入的<br><img src="/images/%E4%BF%A1%E5%8F%B7%E7%94%9F%E6%88%90.jpg" srcset="/img/loading.gif" lazyload alt="信号生成"><br>我输入网址，生成信号，偶然发现生成的信号可以跳转到刚才输入的网址，随后我探索了“已公开的信号”，“信号薄”，没什么有用的发现，于是我点了“退出”<br>就在这时，嗯？怎么多了个东西“回到频道”<br><img src="/images/%E5%9B%9E%E5%88%B0%E9%A2%91%E9%81%93.jpg" srcset="/img/loading.gif" lazyload alt="回到频道"><br>下面的小字我注意到了<br>“忘了口令？她曾经把一条重置链接压成信号，留给自己用。 你手上要是正好有那条信号，直接打开它就行。”<br>也就是说，她应该是有自己的账号的，也许叫admin？尝试&#x2F;admin，页面告诉我，这一页只对她自己开放，那么现在的任务，就是找到那个能够重置的信号，但是信号有14776336个，到这里我思路就断了，我完全不知道怎么找到那个信号，就算让AI枚举，也得枚举好长时间，于是我问了AI该怎么办<br>于是我明白了，那个短码就是一个接口，难怪会跳转到我刚才输入的网址，所以反向查询&#x2F;admin，&#x2F;board发现都是数字，要知道在字母的数字混用的短码里面，出现数字的概率极低，而两次全都撞到数字，说明她极大概率用这些好记的数字来作为重置信号，于是AI写了个脚本来爆破0000~9999的信号<br><img src="/images/%E8%84%9A%E6%9C%AC.jpg" srcset="/img/loading.gif" lazyload alt="脚本"><br>爆破出来是7041<br>尝试下成功了，修改密码后，进入到了admin，拿到了flag</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>做了这些题，步骤似乎都比较清晰了，大概就是下面几个步骤：<br>（1）先看html和js文件，在里面找到漏洞<br>（2）改cookies，但这个地方会有一个判断，如果cookies的值看不懂，那极大概率就是加密了<br>   1.如果没有加密，那直接修改cookies的值，有时候也要修改请求头然后重新发送就可以了<br>   2.如果加密了，就要去寻找密钥，那修改加密的cookies就要看看是什么结构了，是不是两个段落拼起来的，具体就去看有没有“.”，有的话说明肯定是和谁拼起来的，一般我觉得就是前端可以随便修改的内容比如说header+payload，把这两个加密完之后在修改就可以了<br>目前我就只知道这些过程，但也够我做这些简单题</p>
+                <h2 id="取一个呼号">取一个呼号</h2>
+<p><img src="/images/%E5%8F%96%E4%B8%80%E4%B8%AA%E5%91%BC%E5%8F%B7.jpg" srcset="/img/loading.gif" lazyload alt="取一个呼号"><br>
+到这里我比较懵逼，第一想法难道是SQL注入？<br>
+但是经过尝试，很明显不是考察SQL注入的<br>
+<img src="/images/%E4%BF%A1%E5%8F%B7%E7%94%9F%E6%88%90.jpg" srcset="/img/loading.gif" lazyload alt="信号生成"><br>
+我输入网址，生成信号，偶然发现生成的信号可以跳转到刚才输入的网址，随后我探索了“已公开的信号”，“信号薄”，没什么有用的发现，于是我点了“退出”<br>
+就在这时，嗯？怎么多了个东西“回到频道”<br>
+<img src="/images/%E5%9B%9E%E5%88%B0%E9%A2%91%E9%81%93.jpg" srcset="/img/loading.gif" lazyload alt="回到频道"><br>
+下面的小字我注意到了<br>
+“忘了口令？她曾经把一条重置链接压成信号，留给自己用。 你手上要是正好有那条信号，直接打开它就行。”<br>
+也就是说，她应该是有自己的账号的，也许叫admin？尝试/admin，页面告诉我，这一页只对她自己开放，那么现在的任务，就是找到那个能够重置的信号，但是信号有14776336个，到这里我思路就断了，我完全不知道怎么找到那个信号，就算让AI枚举，也得枚举好长时间，于是我问了AI该怎么办<br>
+于是我明白了，那个短码就是一个接口，难怪会跳转到我刚才输入的网址，所以反向查询/admin，/board发现都是数字，要知道在字母的数字混用的短码里面，出现数字的概率极低，而两次全都撞到数字，说明她极大概率用这些好记的数字来作为重置信号，于是AI写了个脚本来爆破0000~9999的信号<br>
+<img src="/images/%E8%84%9A%E6%9C%AC.jpg" srcset="/img/loading.gif" lazyload alt="脚本"><br>
+爆破出来是7041<br>
+尝试下成功了，修改密码后，进入到了admin，拿到了flag</p>
+<h2 id="总结">总结</h2>
+<p>做了这些题，步骤似乎都比较清晰了，大概就是下面几个步骤：<br>
+（1）先看html和js文件，在里面找到漏洞<br>
+（2）改cookies，但这个地方会有一个判断，如果cookies的值看不懂，那极大概率就是加密了<br>
+1.如果没有加密，那直接修改cookies的值，有时候也要修改请求头然后重新发送就可以了<br>
+2.如果加密了，就要去寻找密钥，那修改加密的cookies就要看看是什么结构了，是不是两个段落拼起来的，具体就去看有没有“.”，有的话说明肯定是和谁拼起来的，一般我觉得就是前端可以随便修改的内容比如说header+payload，把这两个加密完之后在修改就可以了<br>
+目前我就只知道这些过程，但也够我做这些简单题</p>
 
                 
               </div>
@@ -478,7 +500,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/10/13/%E7%9F%A9%E9%98%B5%E5%92%8CRSA%E9%A2%98%E8%A7%A3/" title="密码第三周周报">
+                      <a href="/2026/10/13/%E7%9F%A9%E9%98%B5%E9%83%A8%E5%88%86RSA%E9%A2%98%E8%A7%A3/" title="密码第三周周报">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">密码第三周周报</span>
                         <span class="visible-mobile">Previous</span>
@@ -546,6 +568,11 @@
 
 
   
+
+
+  
+  
+
 
 
 

@@ -19,12 +19,12 @@
   <meta name="author" content="yimingmoying">
   <meta name="keywords" content="">
   
-    <meta name="description" content="数据类型文本类型str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样 数值类型1.int：只取数字的整数部分2.float：将数字改写为浮点数3.complex：将数字改写为复数 序列类型list：列表 目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢 字符串比较少的字符串就用一对单引号或者双引号来表示，但是多行">
+    <meta name="description" content="数据类型 文本类型 str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样 数值类型 1.int：只取数字的整数部分 2.float：将数字改写为浮点数 3.complex：将数字改写为复数 序列类型 list：列表 目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢 字符串 比较少的字符串就用一对单引号或者双引号来">
 <meta property="og:type" content="article">
 <meta property="og:title" content="密码第二周周报">
 <meta property="og:url" content="http://yimingmoying.github.io/2026/09/26/python%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Me">
-<meta property="og:description" content="数据类型文本类型str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样 数值类型1.int：只取数字的整数部分2.float：将数字改写为浮点数3.complex：将数字改写为复数 序列类型list：列表 目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢 字符串比较少的字符串就用一对单引号或者双引号来表示，但是多行">
+<meta property="og:description" content="数据类型 文本类型 str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样 数值类型 1.int：只取数字的整数部分 2.float：将数字改写为浮点数 3.complex：将数字改写为复数 序列类型 list：列表 目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢 字符串 比较少的字符串就用一对单引号或者双引号来">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-09-26T09:32:24.000Z">
 <meta property="article:modified_time" content="2026-09-30T09:11:53.684Z">
@@ -45,6 +45,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -326,7 +328,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.4k words
+          3.3k words
         
       </span>
     
@@ -337,7 +339,7 @@
         
         
         
-          29 mins
+          28 mins
         
       </span>
     
@@ -381,36 +383,158 @@
             
               <div class="markdown-body">
                 
-                <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="文本类型"><a href="#文本类型" class="headerlink" title="文本类型"></a>文本类型</h3><p>str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样</p>
-<h3 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h3><p>1.int：只取数字的整数部分<br>2.float：将数字改写为浮点数<br>3.complex：将数字改写为复数</p>
-<h3 id="序列类型"><a href="#序列类型" class="headerlink" title="序列类型"></a>序列类型</h3><p>list：列表</p>
+                <h2 id="数据类型">数据类型</h2>
+<h3 id="文本类型">文本类型</h3>
+<p>str：被指定为文本类型的内容，就类似于在文本文档（.txt）里面写的东西一样</p>
+<h3 id="数值类型">数值类型</h3>
+<p>1.int：只取数字的整数部分<br>
+2.float：将数字改写为浮点数<br>
+3.complex：将数字改写为复数</p>
+<h3 id="序列类型">序列类型</h3>
+<p>list：列表</p>
 <p>目前只学了这几个类型，序列类型里面的tuple和range还没学，还有映射。集合，布尔，二进制类型也都没学呢</p>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>比较少的字符串就用一对单引号或者双引号来表示，但是多行字符串可以用三对双引号或者单引号来表示<br>字符串也是一个数组，字符串中的空格要占一个位置，例如：<br>b &#x3D; “Hello, World!”<br>print(b[2:5])<br>这个输出结果就是 llo<br>如果改写为：<br>b &#x3D; “Hello, World!”<br>print(b[-3:-1])<br>此时输出结果就是 rld</p>
-<h3 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h3><p>使用方法：变量.方法()<br>len()：可以查看字符串的长度，同时它也可以查看列表，元组，字典长度<br>strip()：可以删除开头和结尾的空白字符，这个东西我能想到的除了在后端记录密码、用户名避免因为空格而导致登录报错之外，我不知道它还有什么用处<br>lower():将字符全部返回为小写<br>upper():与lower()相反<br>replace(“要被替换的字符串”，“替换为的字符串”):将字符串中的一小段替换掉<br>split(“寻找作为分割点的符号”):找到分隔符是将一整个字符串分割为许多子字符串</p>
-<h3 id="字符串组合"><a href="#字符串组合" class="headerlink" title="字符串组合"></a>字符串组合</h3><p>举个例子：<br>age &#x3D; “18”<br>txt &#x3D; “My name is zzy, I am “ + age<br>print(txt)<br>此时输出的是 My name is zzy, I am 18<br>但是，注意到，如果这句话 age &#x3D; “18” 没有引号怎么办？此时再打印就会报错，因为 + 两边的数据类型需要相同，左边是str烈性，右边是int类型，文本类型不一样就不能相加，但是如果两个数字，一个是str类型，另一个是int类型，虽然文本类型不一样，但是依然不会报错<br>显然，按照上述的方法，我们需要时刻注意 + 两边的文本类型是不是一样的，这会消耗我们的精力，这很不健康，那么主播主播，有没有可以无脑插入字符串的方法？有的兄弟，有的有的<br>format()方法就此诞生，我们只要将上面的例子进行一个小小的更改：<br>age &#x3D; “18”<br>txt &#x3D; “My name is zzy, I am {}”<br>print(txt.format(age))<br>这里{}起到一个占位符的作用，format 就自动的将 age 这个变量插入到这个占位符里面，但是如果我有很多要插入的东西怎么办？举个例子：<br>quantity &#x3D; 3<br>itemno &#x3D; 567<br>price &#x3D;114514<br>myorder &#x3D; “I want {} pieces of item {} for {} dollars.”<br>print(myorder.format(quantity, itemno, price))<br>这样，format 就会按照顺序将变量添加到占位符里面</p>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>加(+) 减(-) 乘(*) 除(&#x2F;) 取模(%) 幂(**) 取整除(&#x2F;&#x2F;)</p>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>and	如果两个语句都为真，则返回 True<br>or	如果其中一个语句为真，则返回 True<br>not	反转结果，如果结果为 true，则返回 False</p>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>in	如果对象中存在具有指定值的序列，则返回 True<br>not in	如果对象中不存在具有指定值的序列，则返回 True</p>
-<h3 id="二进制运算符"><a href="#二进制运算符" class="headerlink" title="二进制运算符"></a>二进制运算符</h3><p>&amp;	AND 与	如果两个位均为1，则将每个位设为 1<br>|	OR 或	如果两位中的一位为1，则将每个位设为 1<br>^	XOR 异或  如果两个位中只有一位为1，则将每个位设为 1<br>~	NOT 非	反转所有位</p>
-<h2 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h2><h3 id="if"><a href="#if" class="headerlink" title="if"></a>if</h3><p>温馨提醒：缩进要对</p>
-<h3 id="elif"><a href="#elif" class="headerlink" title="elif"></a>elif</h3><p>和 if 没什么区别，但是它会使整个程序简洁，如果一个程序写的全是 if ，那么电脑就会选择将所有的 if 全部跑一边，即使它已经找到满足条件的程序了，但是 elif 不一样，它一旦找到满足条件的程序，就会停止接下来的判断，因此会使整个程序效率更高</p>
-<h3 id="else"><a href="#else" class="headerlink" title="else"></a>else</h3><p>最后一个条件判断</p>
-<h2 id="While循环"><a href="#While循环" class="headerlink" title="While循环"></a>While循环</h2><h3 id="While语法"><a href="#While语法" class="headerlink" title="While语法"></a>While语法</h3><p>while 要判断条件：<br>    判断为成立后所要执行的语句</p>
-<h3 id="break语句"><a href="#break语句" class="headerlink" title="break语句"></a>break语句</h3><p>break语句写在while语句里边，只要break被执行，那么整个while语句就会被停止</p>
-<h3 id="continue语句"><a href="#continue语句" class="headerlink" title="continue语句"></a>continue语句</h3><p>continue语句和break相反，一个直接停止，一个是重新执行while语句</p>
-<h2 id="For循环"><a href="#For循环" class="headerlink" title="For循环"></a>For循环</h2><h3 id="For语法"><a href="#For语法" class="headerlink" title="For语法"></a>For语法</h3><p>for 变量 in 要循环执行的内容：<br>    开始循环后要执行的语句</p>
-<h3 id="break和continue语句"><a href="#break和continue语句" class="headerlink" title="break和continue语句"></a>break和continue语句</h3><p>和while一样</p>
-<h3 id="range-函数"><a href="#range-函数" class="headerlink" title="range()函数"></a>range()函数</h3><p>举个例子<br>for i in range(1,11，2):<br>    print(i)<br>输出结果为1，3，5，7，9<br>注意：输出结果没有11</p>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="创建并调用函数"><a href="#创建并调用函数" class="headerlink" title="创建并调用函数"></a>创建并调用函数</h3><p>用 def 定义函数，举个例子：<br>def function():<br>    print(“Hello，Wrold”)<br>function()<br>此时输出结果为 Hello，Wrold </p>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p>def function(fname):<br>    print(fname + “is a human”)<br>function(“zzy”)<br>此时，输出结果为 zzy is a human</p>
-<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>现在有这么一个分段函数：<br>若 x&gt;0 则 f(x)&#x3D;x+f(x-1)<br>若 x&lt;&#x3D;0 则 f(x)&#x3D;0<br>我现在想知道 x 从 0到6 所有的值，该怎么写呢？<br>def function(x):<br>    if x&gt;0:<br>        result &#x3D; x + function(x-1)<br>        print(result)<br>    else:<br>        result &#x3D; 0<br>    return result<br>function(6)<br>这样输出结果就是1，3，6，10，15，21<br>但是输出结果为什么不是21，15，10，6，3，1呢？<br>因为电脑在处理这个函数的时候发现 function(6) 算不出来，因为它需要 function(5)，以此类推直到 function(0) 它算出来是0，但是0不打印，此时它开始打印最新的结果，就是 function(1)&#x3D;1 ，因此是这个顺序</p>
-<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p>这个对于我这个新手来说感觉有点难整</p>
-<h3 id="创建并使用类"><a href="#创建并使用类" class="headerlink" title="创建并使用类"></a>创建并使用类</h3><p>函数创建用 def ，这里用 class<br>比如我现在要创建 Person 这个类：<br>class Person:<br>    内容<br>要知道，类里面自带的有一个 __init__() 函数，这个函数无论在类里面写不写，它都会默认执行，它具有一定的性质，举个例子：<br>class Person:<br>    def __init__(self, name, age):<br>        self.name &#x3D; name<br>        self.age &#x3D; age<br>    def function(self):<br>        print(“My name is”, self.name ,”I am”, sale.age ,)<br>p1 &#x3D; Person(“zzy”, 18)<br>p2 &#x3D; Person(“xxx”, 18)<br>p1.function()<br>p2.function()<br>这里可能会产生三个问题：</p>
-<p>1.self是什么？为什么要写 self ？<br> self 是你自定义的对象的名字，也可以叫 this ，也可以叫 balabala 。这里如果不写self，后面的 self.name 电脑就不知道是什么，就会报错</p>
-<p>2.self.name 和 self.age 中的 name ，age 是什么？<br>那是变量，也叫属性，这个变量可以和引入的变量名不一样</p>
-<p>3.为什么不写成 function(p1) 呢？<br>当然不可以写成这个样子！<br>(1)这个函数是写在类里面的，不能在外面单独使用<br>(2)这一条是显示这两个写法的本质区别，而不是不能这么写的原因，p1.function() 实际上是让 p1 自己去执行 function 这个函数，而 function(p1) 是你自己主动将 p1 传进 function() 这个工具中进行加工<br>但是我非要在外面单独用呢？<br>那调用时只用在 function() 前面加上 Person. 即 Person.function(p1) 就能正常使用了</p>
-<p>还有要补充的对于我来说便于理解的东西，就是这个点，我们翻译为自然语言可以是“的”和“进行……操作”两个意思，还拿刚才这个示例来说：<br>self.name 可以理解为 self (就是指后面创建的对象，比如 p1 )的 name<br>p1.function() 可以理解为让 p1 自己运行 function() 这个函数</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我已力竭，但还会再继续学习的，前面抽象代数的知识有点遗忘，下周再复习吧！<br>来把雀魂！</p>
+<h2 id="字符串">字符串</h2>
+<p>比较少的字符串就用一对单引号或者双引号来表示，但是多行字符串可以用三对双引号或者单引号来表示<br>
+字符串也是一个数组，字符串中的空格要占一个位置，例如：<br>
+b = “Hello, World!”<br>
+print(b[2:5])<br>
+这个输出结果就是 llo<br>
+如果改写为：<br>
+b = “Hello, World!”<br>
+print(b[-3:-1])<br>
+此时输出结果就是 rld</p>
+<h3 id="字符串方法">字符串方法</h3>
+<p>使用方法：变量.方法()<br>
+len()：可以查看字符串的长度，同时它也可以查看列表，元组，字典长度<br>
+strip()：可以删除开头和结尾的空白字符，这个东西我能想到的除了在后端记录密码、用户名避免因为空格而导致登录报错之外，我不知道它还有什么用处<br>
+lower():将字符全部返回为小写<br>
+upper():与lower()相反<br>
+replace(“要被替换的字符串”，“替换为的字符串”):将字符串中的一小段替换掉<br>
+split(“寻找作为分割点的符号”):找到分隔符是将一整个字符串分割为许多子字符串</p>
+<h3 id="字符串组合">字符串组合</h3>
+<p>举个例子：<br>
+age = “18”<br>
+txt = &quot;My name is zzy, I am &quot; + age<br>
+print(txt)<br>
+此时输出的是 My name is zzy, I am 18<br>
+但是，注意到，如果这句话 age = “18” 没有引号怎么办？此时再打印就会报错，因为 + 两边的数据类型需要相同，左边是str烈性，右边是int类型，文本类型不一样就不能相加，但是如果两个数字，一个是str类型，另一个是int类型，虽然文本类型不一样，但是依然不会报错<br>
+显然，按照上述的方法，我们需要时刻注意 + 两边的文本类型是不是一样的，这会消耗我们的精力，这很不健康，那么主播主播，有没有可以无脑插入字符串的方法？有的兄弟，有的有的<br>
+format()方法就此诞生，我们只要将上面的例子进行一个小小的更改：<br>
+age = “18”<br>
+txt = “My name is zzy, I am {}”<br>
+print(txt.format(age))<br>
+这里{}起到一个占位符的作用，format 就自动的将 age 这个变量插入到这个占位符里面，但是如果我有很多要插入的东西怎么办？举个例子：<br>
+quantity = 3<br>
+itemno = 567<br>
+price =114514<br>
+myorder = “I want {} pieces of item {} for {} dollars.”<br>
+print(myorder.format(quantity, itemno, price))<br>
+这样，format 就会按照顺序将变量添加到占位符里面</p>
+<h2 id="运算符">运算符</h2>
+<h3 id="算术运算符">算术运算符</h3>
+<p>加(+) 减(-) 乘(*) 除(/) 取模(%) 幂(**) 取整除(//)</p>
+<h3 id="逻辑运算符">逻辑运算符</h3>
+<p>and	如果两个语句都为真，则返回 True<br>
+or	如果其中一个语句为真，则返回 True<br>
+not	反转结果，如果结果为 true，则返回 False</p>
+<h3 id="身份运算符">身份运算符</h3>
+<p>in	如果对象中存在具有指定值的序列，则返回 True<br>
+not in	如果对象中不存在具有指定值的序列，则返回 True</p>
+<h3 id="二进制运算符">二进制运算符</h3>
+<p>&amp;	AND 与	如果两个位均为1，则将每个位设为 1<br>
+|	OR 或	如果两位中的一位为1，则将每个位设为 1<br>
+^	XOR 异或  如果两个位中只有一位为1，则将每个位设为 1<br>
+~	NOT 非	反转所有位</p>
+<h2 id="if-else">if else</h2>
+<h3 id="if">if</h3>
+<p>温馨提醒：缩进要对</p>
+<h3 id="elif">elif</h3>
+<p>和 if 没什么区别，但是它会使整个程序简洁，如果一个程序写的全是 if ，那么电脑就会选择将所有的 if 全部跑一边，即使它已经找到满足条件的程序了，但是 elif 不一样，它一旦找到满足条件的程序，就会停止接下来的判断，因此会使整个程序效率更高</p>
+<h3 id="else">else</h3>
+<p>最后一个条件判断</p>
+<h2 id="While循环">While循环</h2>
+<h3 id="While语法">While语法</h3>
+<p>while 要判断条件：<br>
+判断为成立后所要执行的语句</p>
+<h3 id="break语句">break语句</h3>
+<p>break语句写在while语句里边，只要break被执行，那么整个while语句就会被停止</p>
+<h3 id="continue语句">continue语句</h3>
+<p>continue语句和break相反，一个直接停止，一个是重新执行while语句</p>
+<h2 id="For循环">For循环</h2>
+<h3 id="For语法">For语法</h3>
+<p>for 变量 in 要循环执行的内容：<br>
+开始循环后要执行的语句</p>
+<h3 id="break和continue语句">break和continue语句</h3>
+<p>和while一样</p>
+<h3 id="range-函数">range()函数</h3>
+<p>举个例子<br>
+for i in range(1,11，2):<br>
+print(i)<br>
+输出结果为1，3，5，7，9<br>
+注意：输出结果没有11</p>
+<h2 id="函数">函数</h2>
+<h3 id="创建并调用函数">创建并调用函数</h3>
+<p>用 def 定义函数，举个例子：<br>
+def function():<br>
+print(“Hello，Wrold”)<br>
+function()<br>
+此时输出结果为 Hello，Wrold</p>
+<h3 id="参数">参数</h3>
+<p>def function(fname):<br>
+print(fname + “is a human”)<br>
+function(“zzy”)<br>
+此时，输出结果为 zzy is a human</p>
+<h3 id="递归">递归</h3>
+<p>现在有这么一个分段函数：<br>
+若 x&gt;0 则 f(x)=x+f(x-1)<br>
+若 x&lt;=0 则 f(x)=0<br>
+我现在想知道 x 从 0到6 所有的值，该怎么写呢？<br>
+def function(x):<br>
+if x&gt;0:<br>
+result = x + function(x-1)<br>
+print(result)<br>
+else:<br>
+result = 0<br>
+return result<br>
+function(6)<br>
+这样输出结果就是1，3，6，10，15，21<br>
+但是输出结果为什么不是21，15，10，6，3，1呢？<br>
+因为电脑在处理这个函数的时候发现 function(6) 算不出来，因为它需要 function(5)，以此类推直到 function(0) 它算出来是0，但是0不打印，此时它开始打印最新的结果，就是 function(1)=1 ，因此是这个顺序</p>
+<h2 id="类">类</h2>
+<p>这个对于我这个新手来说感觉有点难整</p>
+<h3 id="创建并使用类">创建并使用类</h3>
+<p>函数创建用 def ，这里用 class<br>
+比如我现在要创建 Person 这个类：<br>
+class Person:<br>
+内容<br>
+要知道，类里面自带的有一个 __init__() 函数，这个函数无论在类里面写不写，它都会默认执行，它具有一定的性质，举个例子：<br>
+class Person:<br>
+def __init__(self, name, age):<br>
+<a target="_blank" rel="noopener" href="http://self.name">self.name</a> = name<br>
+self.age = age<br>
+def function(self):<br>
+print(“My name is”, <a target="_blank" rel="noopener" href="http://self.name">self.name</a> ,“I am”, sale.age ,)<br>
+p1 = Person(“zzy”, 18)<br>
+p2 = Person(“xxx”, 18)<br>
+p1.function()<br>
+p2.function()<br>
+这里可能会产生三个问题：</p>
+<p>1.self是什么？为什么要写 self ？<br>
+self 是你自定义的对象的名字，也可以叫 this ，也可以叫 balabala 。这里如果不写self，后面的 <a target="_blank" rel="noopener" href="http://self.name">self.name</a> 电脑就不知道是什么，就会报错</p>
+<p><a target="_blank" rel="noopener" href="http://2.self.name">2.self.name</a> 和 self.age 中的 name ，age 是什么？<br>
+那是变量，也叫属性，这个变量可以和引入的变量名不一样</p>
+<p>3.为什么不写成 function(p1) 呢？<br>
+当然不可以写成这个样子！<br>
+(1)这个函数是写在类里面的，不能在外面单独使用<br>
+(2)这一条是显示这两个写法的本质区别，而不是不能这么写的原因，p1.function() 实际上是让 p1 自己去执行 function 这个函数，而 function(p1) 是你自己主动将 p1 传进 function() 这个工具中进行加工<br>
+但是我非要在外面单独用呢？<br>
+那调用时只用在 function() 前面加上 Person. 即 Person.function(p1) 就能正常使用了</p>
+<p>还有要补充的对于我来说便于理解的东西，就是这个点，我们翻译为自然语言可以是“的”和“进行……操作”两个意思，还拿刚才这个示例来说：<br>
+<a target="_blank" rel="noopener" href="http://self.name">self.name</a> 可以理解为 self (就是指后面创建的对象，比如 p1 )的 name<br>
+p1.function() 可以理解为让 p1 自己运行 function() 这个函数</p>
+<h2 id="总结">总结</h2>
+<p>我已力竭，但还会再继续学习的，前面抽象代数的知识有点遗忘，下周再复习吧！<br>
+来把雀魂！</p>
 
                 
               </div>
@@ -569,6 +693,11 @@
 
 
   
+
+
+  
+  
+
 
 
 
